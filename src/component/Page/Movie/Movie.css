@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+}
+button{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}

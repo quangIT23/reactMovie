@@ -1,0 +1,19 @@
+.list-movie {
+    background-color: #000;
+}
+
+.headline {
+    text-align: center;
+}
+
+.headline h3 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.headline h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
