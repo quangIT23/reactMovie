@@ -10,10 +10,11 @@ const Detail = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-const trailerMovie = useFetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${API_KEY}`);
-const findTrailer = trailerMovie.find((item) =>item.type ==="Trailer");
-console.log(findTrailer);
-
+  const trailerMovie = useFetch(
+    `https://api.themoviedb.org/3/movie/${movieID}/videos?api_key=${API_KEY}`
+  );
+  const findTrailer = trailerMovie.find((item) => item.type === "Trailer");
+  console.log(findTrailer);
 
   const { slug: movieID } = useParams();
   const API_KEY = "e9e9d8da18ae29fc430845952232787c";
@@ -25,7 +26,7 @@ console.log(findTrailer);
   return (
     <div>
       <Container>
-        <Row>   
+        <Row>
           <Col lg={6}>
             <img
               src={`https://image.tmdb.org/t/p/w300${DetailMovie.poster_path}`}
